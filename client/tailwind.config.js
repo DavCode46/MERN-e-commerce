@@ -13,7 +13,9 @@ export default {
         light: "0 4px 6px rgba(0, 0, 0, 0.1)",
       },
       colors: {
-        
+        primary: {
+          bg: '#f5f5f5',
+        }
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],
