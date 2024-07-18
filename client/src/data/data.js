@@ -198,4 +198,3 @@ const PRODUCTS = [
 export { PRODUCTS };
 
 
-  export {PRODUCTS}

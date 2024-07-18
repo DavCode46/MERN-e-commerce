@@ -26,7 +26,7 @@ const ProductCard = ({ brand, product, productImage, price, productStars }) => {
   };
 
   return (
-    <div className='relative bg-white p-5 w-[20rem] rounded-lg shadow-lg overflow-hidden'>
+    <div className='relative bg-white p-5 w-[20rem] rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-200'>
         <div className="relative w-full h-[12rem] overflow-hidden mb-5">
           <img src={productImage} alt="" className="w-full h-full object-contain" />
         </div>
