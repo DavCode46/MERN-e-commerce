@@ -11,7 +11,8 @@ export default defineConfig({
       '@pages': '/src/pages',
       '@utils': '/src/utils',
       '@context': '/src/context',
-      '@ui': '/src/components/UI'
+      '@ui': '/src/components/UI',
+      '@data': '/src/data',
     }
   }
 })

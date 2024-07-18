@@ -82,6 +82,7 @@ const Navbar = () => {
             menu={{
               items,
             }}
+            className="rounded-full"
             placement="bottomLeft"
             arrow
           >

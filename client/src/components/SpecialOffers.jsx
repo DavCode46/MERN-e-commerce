@@ -1,4 +1,4 @@
-import Container from "@components/UI/Container";
+import Container from "@ui/Container";
 
 const SpecialOffers = () => {
   return (

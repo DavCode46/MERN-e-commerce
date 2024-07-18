@@ -16,8 +16,10 @@ export default {
         primary: {
           bg: '#f5f5f5',
           sidebar: '#252525',
+          sidebarHeader: '#231c1c',
           button: '#cca675',
           buttonHover: '#a97742',
+          addToCartHover: '#2f2f2f',
         }
       },
       fontFamily: {
