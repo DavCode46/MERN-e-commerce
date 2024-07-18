@@ -1,25 +1,23 @@
 import Container from "@ui/Container";
+import { SPECIALS_DATA } from "@data/data";
 
 const SpecialOffers = () => {
   return (
     <div className="mt-[3rem]">
       <h2 className="text-2xl font-bold mb-8">Special Offers</h2>
       <div className="flex  items-start gap-5">
-        <Container
-          title="High Quality Furniture"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nunc libero, vulputate et finibus a, venenatis quis mi."
-          bgImage="/room1.jpg"
-          textButton="Learn More"
-          className="w-full md:w-1/2 rounded-lg"
-        />
-        <Container
-          title="Discount Up to"
-          discount="70%"
-          content="Lorem ipsum dolor sit amet."
-          bgImage="/room2.jpg"
-          textButton="Shop Now"
-          className="w-full md:w-1/3 rounded-lg"
-        />
+        {SPECIALS_DATA.map((item) => {
+          return (
+            <Container
+              key={item.id}
+              title={item.title}
+              content={item.content}
+              bgImage={item.bgImage}
+              textButton={item.textButton}
+              className={item.className}
+            />
+          );
+        })}
       </div>
     </div>
   );
