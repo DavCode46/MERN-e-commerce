@@ -1,8 +1,11 @@
+import SpecialOffers from '@components/SpecialOffers'
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+     <SpecialOffers />
+    </>
+  );
+};
 
-export default Home
+export default Home;

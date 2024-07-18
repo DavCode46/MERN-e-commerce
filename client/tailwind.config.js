@@ -15,6 +15,9 @@ export default {
       colors: {
         primary: {
           bg: '#f5f5f5',
+          sidebar: '#252525',
+          button: '#cca675',
+          buttonHover: '#a97742',
         }
       },
       fontFamily: {

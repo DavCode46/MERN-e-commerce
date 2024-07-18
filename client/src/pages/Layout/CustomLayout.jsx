@@ -1,13 +1,15 @@
-import Navbar from '@components/Navbar'
-import {Outlet} from 'react-router-dom'
+import Navbar from "@components/Navbar";
+// import Sidebar from "@components/Sidebar";
+import { Outlet } from "react-router-dom";
 
 const CustomLayout = () => {
   return (
     <>
-        <Navbar />
-        <Outlet />
+      {/* <Sidebar /> */}
+      <Navbar />
+      <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default CustomLayout
+export default CustomLayout;

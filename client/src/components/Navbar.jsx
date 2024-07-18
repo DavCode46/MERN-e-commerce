@@ -61,7 +61,7 @@ const items = [
 const Navbar = () => {
   return (
     <nav>
-      <ul className="flex items-center justify-between p-8 bg-primary-bg font-poppins text-sm text-black px-10">
+      <ul className="flex items-center justify-between p-8 bg-primary-bg font-poppins text-sm text-black px-10 shadow-lg">
         <li className="hover:underline hover:scale-105 transition-all duration-300">
           <Link to="/home">Inicio</Link>
         </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
         <li>
           <Search placeholder="Buscar Productos" />
         </li>
-        <li>
+        <li className="flex gap-4 items-center">
           <Dropdown
             menu={{
               items,
@@ -87,12 +87,11 @@ const Navbar = () => {
           >
             <Button icon={<IoBagOutline />} />
           </Dropdown>
-        </li>
-        <li>
           <Link to="/profile">
-            <Avatar />
+            <Avatar src='/avatar2.jpg' size={50}/>
           </Link>
         </li>
+        
       </ul>
     </nav>
   );
