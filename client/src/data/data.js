@@ -128,9 +128,18 @@ const PRODUCTS = [
     stars: 4,
     category: "Mesas",
   },
-  // Lámparas
   {
     id: 15,
+    brand: "Casa Moderna",
+    product: "Mesa de Comedor Compacta",
+    productImage: "/table4.png",
+    price: "279.99 €",
+    stars: 4,
+    category: "Mesas",
+  },
+  // Lámparas
+  {
+    id: 16,
     brand: "Luxe Decor",
     product: "Lámpara de Pie Estilizada",
     productImage: "/lamp1.png",
@@ -139,7 +148,7 @@ const PRODUCTS = [
     category: "Lámparas",
   },
   {
-    id: 16,
+    id: 17,
     brand: "Bright Ideas",
     product: "Lámpara de Escritorio Moderna",
     productImage: "/lamp2.png",
@@ -148,7 +157,7 @@ const PRODUCTS = [
     category: "Lámparas",
   },
   {
-    id: 17,
+    id: 18,
     brand: "Luminous",
     product: "Lámpara de Lectura",
     productImage: "/lamp3.png",
@@ -157,7 +166,7 @@ const PRODUCTS = [
     category: "Lámparas",
   },
   {
-    id: 18,
+    id: 19,
     brand: "Shiny Home",
     product: "Lámpara LED",
     productImage: "/lamp4.png",
@@ -166,7 +175,7 @@ const PRODUCTS = [
     category: "Lámparas",
   },
   {
-    id: 19,
+    id: 20,
     brand: "Modern Lights",
     product: "Lámpara de Mesa",
     productImage: "/lamp5.png",
@@ -176,7 +185,7 @@ const PRODUCTS = [
   },
   // Estanterías
   {
-    id: 20,
+    id: 21,
     brand: "Casa Moderna",
     product: "Estantería Modular de Madera",
     productImage: "/shelf1.png",
@@ -185,7 +194,7 @@ const PRODUCTS = [
     category: "Estanterías",
   },
   {
-    id: 21,
+    id: 22,
     brand: "Modern Living",
     product: "Estante Flotante Compacto",
     productImage: "/shelf2.png",
