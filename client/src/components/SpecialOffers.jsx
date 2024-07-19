@@ -1,10 +1,12 @@
 import Container from "@ui/Container";
 import { SPECIALS_DATA } from "@data/data";
+import Section from "./UI/Section";
 
 const SpecialOffers = () => {
   return (
     <div className="mt-[3rem]">
-      <h2 className="text-2xl font-bold mb-8">Special Offers</h2>
+      <Section title='Special Offers'>
+
       <div className="flex  items-start gap-5">
         {SPECIALS_DATA.map((item) => {
           return (
@@ -19,6 +21,7 @@ const SpecialOffers = () => {
           );
         })}
       </div>
+      </Section>
     </div>
   );
 };

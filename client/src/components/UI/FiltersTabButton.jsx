@@ -1,9 +1,11 @@
-import { Button } from "antd"
+import { Button } from "antd";
 
-const FiltersTabButton = ({children}) => {
+const FiltersTabButton = ({ children, onClick }) => {
   return (
-    <Button>{children}</Button>
-  )
-}
+    <Button onClick={onClick}>
+      {children}
+    </Button>
+  );
+};
 
-export default FiltersTabButton
+export default FiltersTabButton;

@@ -1,5 +1,5 @@
 const PRODUCTS = [
-  // Sofás
+  // sofas
   {
     id: 1,
     brand: "Ikea",
@@ -7,7 +7,7 @@ const PRODUCTS = [
     productImage: "/sofa1.webp",
     price: "249.99 €",
     stars: 4.5,
-    category: "Sofás",
+    category: "sofas",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const PRODUCTS = [
     productImage: "/sofa2.webp",
     price: "349.99 €",
     stars: 5,
-    category: "Sofás",
+    category: "sofas",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const PRODUCTS = [
     productImage: "/sofa3.webp",
     price: "499.99 €",
     stars: 4.5,
-    category: "Sofás",
+    category: "sofas",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const PRODUCTS = [
     productImage: "/sofa4.webp",
     price: "299.99 €",
     stars: 4,
-    category: "Sofás",
+    category: "sofas",
   },
   {
     id: 5,
@@ -43,9 +43,9 @@ const PRODUCTS = [
     productImage: "/sofa5.webp",
     price: "399.99 €",
     stars: 4.5,
-    category: "Sofás",
+    category: "sofas",
   },
-  // Sillas
+  // chairs
   {
     id: 6,
     brand: "Habitat",
@@ -53,7 +53,7 @@ const PRODUCTS = [
     productImage: "/chair1.webp",
     price: "79.99 €",
     stars: 5,
-    category: "Sillas",
+    category: "chairs",
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ const PRODUCTS = [
     productImage: "/chair2.webp",
     price: "99.99 €",
     stars: 4,
-    category: "Sillas",
+    category: "chairs",
   },
   {
     id: 8,
@@ -71,7 +71,7 @@ const PRODUCTS = [
     productImage: "/chair3.webp",
     price: "89.99 €",
     stars: 4.5,
-    category: "Sillas",
+    category: "chairs",
   },
   {
     id: 9,
@@ -80,7 +80,7 @@ const PRODUCTS = [
     productImage: "/chair4.webp",
     price: "69.99 €",
     stars: 4.5,
-    category: "Sillas",
+    category: "chairs",
   },
   {
     id: 10,
@@ -89,7 +89,7 @@ const PRODUCTS = [
     productImage: "/chair5.webp",
     price: "79.99 €",
     stars: 5,
-    category: "Sillas",
+    category: "chairs",
   },
   {
     id: 11,
@@ -98,9 +98,9 @@ const PRODUCTS = [
     productImage: "/chair6.webp",
     price: "89.99 €",
     stars: 5,
-    category: "Sillas",
+    category: "chairs",
   },
-  // Mesas
+  // tables
   {
     id: 12,
     brand: "Home & Style",
@@ -108,7 +108,7 @@ const PRODUCTS = [
     productImage: "/table1.webp",
     price: "159.99 €",
     stars: 4,
-    category: "Mesas",
+    category: "tables",
   },
   {
     id: 13,
@@ -117,7 +117,7 @@ const PRODUCTS = [
     productImage: "/table2.webp",
     price: "299.99 €",
     stars: 4.5,
-    category: "Mesas",
+    category: "tables",
   },
   {
     id: 14,
@@ -126,7 +126,7 @@ const PRODUCTS = [
     productImage: "/table3.webp",
     price: "279.99 €",
     stars: 4,
-    category: "Mesas",
+    category: "tables",
   },
   {
     id: 15,
@@ -135,9 +135,9 @@ const PRODUCTS = [
     productImage: "/table4.webp",
     price: "279.99 €",
     stars: 4,
-    category: "Mesas",
+    category: "tables",
   },
-  // Lámparas
+  // lamps
   {
     id: 16,
     brand: "Luxe Decor",
@@ -145,7 +145,7 @@ const PRODUCTS = [
     productImage: "/lamp1.webp",
     price: "119.99 €",
     stars: 4.5,
-    category: "Lámparas",
+    category: "lamps",
   },
   {
     id: 17,
@@ -154,7 +154,7 @@ const PRODUCTS = [
     productImage: "/lamp2.webp",
     price: "69.99 €",
     stars: 5,
-    category: "Lámparas",
+    category: "lamps",
   },
   {
     id: 18,
@@ -163,7 +163,7 @@ const PRODUCTS = [
     productImage: "/lamp3.webp",
     price: "49.99 €",
     stars: 4.5,
-    category: "Lámparas",
+    category: "lamps",
   },
   {
     id: 19,
@@ -172,7 +172,7 @@ const PRODUCTS = [
     productImage: "/lamp4.webp",
     price: "59.99 €",
     stars: 5,
-    category: "Lámparas",
+    category: "lamps",
   },
   {
     id: 20,
@@ -181,9 +181,9 @@ const PRODUCTS = [
     productImage: "/lamp5.webp",
     price: "69.99 €",
     stars: 4,
-    category: "Lámparas",
+    category: "lamps",
   },
-  // Estanterías
+  // shelfs
   {
     id: 21,
     brand: "Casa Moderna",
@@ -191,7 +191,7 @@ const PRODUCTS = [
     productImage: "/shelf1.webp",
     price: "189.99 €",
     stars: 4,
-    category: "Estanterías",
+    category: "shelfs",
   },
   {
     id: 22,
@@ -200,7 +200,7 @@ const PRODUCTS = [
     productImage: "/shelf2.webp",
     price: "49.99 €",
     stars: 4.5,
-    category: "Estanterías",
+    category: "shelfs",
   },
 ];
 

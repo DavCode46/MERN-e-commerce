@@ -5,11 +5,13 @@ import Tables from "@pages/Products/Tables";
 import Chairs from "@pages/Products/Chairs";
 import Sofas from "@pages/Products/Sofas";
 import Lamps from "@pages/Products/Lamps";
+import Shelfs from "@pages/Products/Shelfs";
 import NewItems from "@pages/Products/NewItems";
 import Profile from "@pages/Profile";
 import Home from '@pages/Home'
 import Discover from '@pages/Discover'
 import Cart from '@pages/Cart'
+import Products from "@pages/Products/Products";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,10 +20,12 @@ function App() {
       element: <CustomLayout />,
       errorElement: <Error404 />,
       children: [
-        { path: "products/sofas", element: <Sofas /> },
-        { path: "products/tables", element: <Tables /> },
+        { path: "/products/sofas", element: <Sofas /> },
+        { path: "/products", element: <Products /> },
+        { path: "/products/tables", element: <Tables /> },
         { path: "/products/chairs", element: <Chairs /> },
         { path: "/products/lamps", element: <Lamps /> },
+        { path: "/products/shelfs", element: <Shelfs /> },
         { path: "/products/newItems", element: <NewItems /> },
         { path: '/profile', element: <Profile />},
         { path: '/home', element: <Home />},
