@@ -36,5 +36,33 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
+    width: 100%;
   }
+  .custom-scrollbar {
+    /* Estilo general del contenedor con scrollbar personalizado */
+    overflow: auto;
+    max-height: 100%; /* Ajusta según el contenedor */
+    margin-right: .5rem;
+  }
+  /* Barra de desplazamiento vertical */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Parte de la barra de desplazamiento que no se mueve */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #505050; /* Color del fondo del track */
+  border-radius: 10px;
+}
+
+/* Parte de la barra de desplazamiento que se mueve */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Color del thumb (parte movible) */
+  border-radius: 10px;
+}
+
+/* Barra de desplazamiento al pasar el ratón */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del thumb al pasar el ratón */
+}
 }

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import ProductCard from "@ui/ProductCard";
 import { PRODUCTS } from "@data/data.js";
 import { useSearch } from "@contexts/SearchContext"; 
+import FadeAnimation from '@animations/FadeAnimation'
+import ScrollAnimation from "@animations/ScrollAnimation";
 
 const Products = ({ category }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -24,16 +26,17 @@ const Products = ({ category }) => {
   }, [category, searchTerm]);
 
   return (
-    <div className="products__grid bg-primary-bg p-6 mt-5">
+    <div className="products__grid bg-primary-bg p-6 mt-5 w-full">
       {filteredProducts.map(product => (
-        <ProductCard
-          key={product.id}
-          brand={product.brand}
-          product={product.product}
-          productImage={product.productImage}
-          price={product.price}
-          productStars={product.stars}
-        />
+        <ScrollAnimation key={product.id}>
+          <ProductCard
+            brand={product.brand}
+            product={product.product}
+            productImage={product.productImage}
+            price={product.price}
+            productStars={product.stars}
+          />
+        </ScrollAnimation>
       ))}
     </div>
   );

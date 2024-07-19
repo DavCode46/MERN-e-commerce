@@ -70,7 +70,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <ul className="flex items-center justify-between p-8 bg-primary-bg font-poppins text-sm text-black px-10 shadow-lg">
+      <ul className="flex items-center justify-between p-5 h-[5rem] bg-primary-bg font-poppins text-sm text-black px-10 shadow-lg">
         <li className="hover:underline hover:scale-105 transition-all duration-300">
           <Link to="/home">Home</Link>
         </li>

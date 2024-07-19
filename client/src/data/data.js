@@ -3,25 +3,26 @@ const PRODUCTS = [
   {
     id: 1,
     brand: "Ikea",
-    product: "Sofá Luminoso",
+    product: "Luminous Sofa",
     productImage: "/sofa1.webp",
     price: "249.99 €",
     stars: 4.5,
-    category: "sofas",
+    category: "sofas", 
   },
   {
     id: 2,
     brand: "Urban Living",
-    product: "Sofá de Cuero Deluxe",
+    product: "Deluxe Leather Sofa",
     productImage: "/sofa2.webp",
     price: "349.99 €",
     stars: 5,
     category: "sofas",
+
   },
   {
     id: 3,
     brand: "Modern Comfort",
-    product: "Sofá Seccional",
+    product: "Sectional Sofa",
     productImage: "/sofa3.webp",
     price: "499.99 €",
     stars: 4.5,
@@ -30,7 +31,7 @@ const PRODUCTS = [
   {
     id: 4,
     brand: "Elegance",
-    product: "Sofá Clásico",
+    product: "Classic Sofa",
     productImage: "/sofa4.webp",
     price: "299.99 €",
     stars: 4,
@@ -39,7 +40,7 @@ const PRODUCTS = [
   {
     id: 5,
     brand: "Luxury Furnishings",
-    product: "Sofá Contemporáneo",
+    product: "Contemporary Sofa",
     productImage: "/sofa5.webp",
     price: "399.99 €",
     stars: 4.5,
@@ -49,7 +50,7 @@ const PRODUCTS = [
   {
     id: 6,
     brand: "Habitat",
-    product: "Silla Acolchada Premium",
+    product: "Premium Padded Chair",
     productImage: "/chair1.webp",
     price: "79.99 €",
     stars: 5,
@@ -58,7 +59,7 @@ const PRODUCTS = [
   {
     id: 7,
     brand: "Design Elements",
-    product: "Silla Elegante",
+    product: "Elegant Chair",
     productImage: "/chair2.webp",
     price: "99.99 €",
     stars: 4,
@@ -67,7 +68,7 @@ const PRODUCTS = [
   {
     id: 8,
     brand: "Casa Moderna",
-    product: "Silla de Madera",
+    product: "Wooden Chair",
     productImage: "/chair3.webp",
     price: "89.99 €",
     stars: 4.5,
@@ -76,7 +77,7 @@ const PRODUCTS = [
   {
     id: 9,
     brand: "Modern Living",
-    product: "Silla Ergonómica",
+    product: "Ergonomic Chair",
     productImage: "/chair4.webp",
     price: "69.99 €",
     stars: 4.5,
@@ -85,7 +86,7 @@ const PRODUCTS = [
   {
     id: 10,
     brand: "Classic Comfort",
-    product: "Silla Tapizada",
+    product: "Upholstered Chair",
     productImage: "/chair5.webp",
     price: "79.99 €",
     stars: 5,
@@ -94,7 +95,7 @@ const PRODUCTS = [
   {
     id: 11,
     brand: "Urban Style",
-    product: "Silla Moderna",
+    product: "Modern Chair",
     productImage: "/chair6.webp",
     price: "89.99 €",
     stars: 5,
@@ -104,7 +105,7 @@ const PRODUCTS = [
   {
     id: 12,
     brand: "Home & Style",
-    product: "Mesa de Centro Elegante",
+    product: "Elegant Coffee Table",
     productImage: "/table1.webp",
     price: "159.99 €",
     stars: 4,
@@ -113,7 +114,7 @@ const PRODUCTS = [
   {
     id: 13,
     brand: "Luxury Home",
-    product: "Mesa de Comedor Espaciosa",
+    product: "Spacious Dining Table",
     productImage: "/table2.webp",
     price: "299.99 €",
     stars: 4.5,
@@ -122,7 +123,7 @@ const PRODUCTS = [
   {
     id: 14,
     brand: "Casa Moderna",
-    product: "Mesa de Comedor Compacta",
+    product: "Compact Dining Table",
     productImage: "/table3.webp",
     price: "279.99 €",
     stars: 4,
@@ -131,7 +132,7 @@ const PRODUCTS = [
   {
     id: 15,
     brand: "Casa Moderna",
-    product: "Mesa de Comedor Compacta",
+    product: "Compact Dining Table",
     productImage: "/table4.webp",
     price: "279.99 €",
     stars: 4,
@@ -141,7 +142,7 @@ const PRODUCTS = [
   {
     id: 16,
     brand: "Luxe Decor",
-    product: "Lámpara de Pie Estilizada",
+    product: "Stylized Floor Lamp",
     productImage: "/lamp1.webp",
     price: "119.99 €",
     stars: 4.5,
@@ -150,7 +151,7 @@ const PRODUCTS = [
   {
     id: 17,
     brand: "Bright Ideas",
-    product: "Lámpara de Escritorio Moderna",
+    product: "Modern Desk Lamp",
     productImage: "/lamp2.webp",
     price: "69.99 €",
     stars: 5,
@@ -159,7 +160,7 @@ const PRODUCTS = [
   {
     id: 18,
     brand: "Luminous",
-    product: "Lámpara de Lectura",
+    product: "Reading Lamp",
     productImage: "/lamp3.webp",
     price: "49.99 €",
     stars: 4.5,
@@ -168,7 +169,7 @@ const PRODUCTS = [
   {
     id: 19,
     brand: "Shiny Home",
-    product: "Lámpara LED",
+    product: "LED Lamp",
     productImage: "/lamp4.webp",
     price: "59.99 €",
     stars: 5,
@@ -177,32 +178,33 @@ const PRODUCTS = [
   {
     id: 20,
     brand: "Modern Lights",
-    product: "Lámpara de Mesa",
+    product: "Table Lamp",
     productImage: "/lamp5.webp",
     price: "69.99 €",
     stars: 4,
     category: "lamps",
   },
-  // shelfs
+  // shelves
   {
     id: 21,
     brand: "Casa Moderna",
-    product: "Estantería Modular de Madera",
+    product: "Modular Wood Shelf",
     productImage: "/shelf1.webp",
     price: "189.99 €",
     stars: 4,
-    category: "shelfs",
+    category: "shelves",
   },
   {
     id: 22,
     brand: "Modern Living",
-    product: "Estante Flotante Compacto",
+    product: "Compact Floating Shelf",
     productImage: "/shelf2.webp",
     price: "49.99 €",
     stars: 4.5,
-    category: "shelfs",
+    category: "shelves",
   },
 ];
+
 
 const SPECIALS_DATA = [
   {
