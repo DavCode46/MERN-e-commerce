@@ -217,7 +217,7 @@ const SPECIALS_DATA = [
     id: 2,
     title: "Discount Up to",
     discount: "70%",
-    content: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+    content: "Lorem ipsum dolor sit amet.",
     bgImage: "/room2.webp",
     textButton: "Shop Now",
     className: "w-full md:w-1/3 rounded-lg",

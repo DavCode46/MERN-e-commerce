@@ -11,7 +11,7 @@ const Container = ({ title, content, discount, bgImage, textButton, className })
           <div className="absolute inset-0 bg-black opacity-65"></div>
         </div>
         <div className={'relative z-10 p-8 text-white h-[15rem] w-full md:w-2/3'}>
-          <h1 className="text-2xl font-montserrat">{title}</h1>
+          <h1 className="text-xl font-montserrat">{title}</h1>
           <h2 className="text-4xl">{discount}</h2>
           <p className="mt-4 text-sm">{content}</p>
           <OffersButton> {textButton} </OffersButton>

@@ -13,6 +13,7 @@ const SpecialOffers = () => {
             <Container
               key={item.id}
               title={item.title}
+              discount={item.discount}
               content={item.content}
               bgImage={item.bgImage}
               textButton={item.textButton}

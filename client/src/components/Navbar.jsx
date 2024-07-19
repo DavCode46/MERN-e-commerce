@@ -4,6 +4,7 @@ import { Avatar, Button, Dropdown, Input } from "antd";
 import { IoBagOutline } from "react-icons/io5";
 import { IoIosRemoveCircleOutline } from "react-icons/io";
 import { CiCirclePlus } from "react-icons/ci";
+import { useSearch } from "@contexts/SearchContext";
 
 const { Search } = Input;
 
@@ -52,30 +53,38 @@ const items = [
     key: "5",
     label: (
       <Link to="/cart">
-        <Button className="block m-auto">Pagar pedido</Button>
+        <Button className="block m-auto">Buy</Button>
       </Link>
     ),
   },
 ];
 
+
+
 const Navbar = () => {
+  const { setSearchTerm } = useSearch(); // Obtenemos la función para actualizar el término de búsqueda del contexto
+
+  const onSearch = (value) => {
+    setSearchTerm(value); // Actualizamos el término de búsqueda en el contexto
+  };
+
   return (
     <nav>
       <ul className="flex items-center justify-between p-8 bg-primary-bg font-poppins text-sm text-black px-10 shadow-lg">
         <li className="hover:underline hover:scale-105 transition-all duration-300">
-          <Link to="/home">Inicio</Link>
+          <Link to="/home">Home</Link>
         </li>
         <li>
           <CustomDropdown />
         </li>
         <li className="hover:underline hover:scale-105 transition-all duration-300">
-          <Link to="/products/newItems">Novedades</Link>
+          <Link to="/products/newItems">News</Link>
         </li>
         <li className="hover:underline hover:scale-105 transition-all duration-300">
-          <Link to="/discover">Descubre</Link>
+          <Link to="/discover">Discover</Link>
         </li>
         <li>
-          <Search placeholder="Buscar Productos" />
+          <Search allowClear placeholder="Search..." onSearch={onSearch} />
         </li>
         <li className="flex gap-4 items-center">
           <Dropdown
@@ -92,7 +101,6 @@ const Navbar = () => {
             <Avatar src='/avatar2.jpg' size={50}/>
           </Link>
         </li>
-        
       </ul>
     </nav>
   );

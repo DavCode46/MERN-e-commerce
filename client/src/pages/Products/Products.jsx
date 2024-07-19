@@ -1,24 +1,31 @@
 import { useState, useEffect } from "react";
 import ProductCard from "@ui/ProductCard";
 import { PRODUCTS } from "@data/data.js";
+import { useSearch } from "@contexts/SearchContext"; 
 
 const Products = ({ category }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const { searchTerm } = useSearch(); 
 
   useEffect(() => {
-    if (category === "all") {
-      setFilteredProducts(PRODUCTS);
-    } else {
-      const filtered = PRODUCTS.filter(
-        (product) => product.category === category
-      );
-      setFilteredProducts(filtered);
+    let filtered = PRODUCTS;
+
+    if (category !== "all") {
+      filtered = filtered.filter(product => product.category === category);
     }
-  }, [category]);
+
+    if (searchTerm) {
+      filtered = filtered.filter(product =>
+        product.product.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    setFilteredProducts(filtered);
+  }, [category, searchTerm]);
 
   return (
     <div className="products__grid bg-primary-bg p-6 mt-5">
-      {filteredProducts.map((product) => (
+      {filteredProducts.map(product => (
         <ProductCard
           key={product.id}
           brand={product.brand}
